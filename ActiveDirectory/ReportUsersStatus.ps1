@@ -15,7 +15,7 @@ $disabled = Search-ADAccount -AccountDisabled|Select-Object -Property Name
 $locked = Search-ADAccount -LockedOut|Select-Object -Property Name
 $pexpired = Search-ADAccount -PasswordExpired|Select-Object -Property Name
 
-$path = "{0}\ADUsersStatusRepport.txt" -f $env:TEMP 
+$path = "{0}\ADUsrStatus_{1}.txt" -f $env:TEMP,(Get-Date -f yyyy-MM-dd-hh-mm)
 
 $stream =  [System.IO.StreamWriter] $path
 $stream.WriteLine("Expired account :")

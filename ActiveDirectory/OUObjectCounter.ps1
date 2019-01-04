@@ -20,7 +20,7 @@ Hide-Console
 Add-Type -AssemblyName Microsoft.VisualBasic
 Add-Type -AssemblyName System.Windows.Forms
 
-$adServer = "FIRST.EXEMPLE.NET"
+$adServer = ""
 
 $title = 'OU Object Counter'
 $msg   = "LDAP Path"

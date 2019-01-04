@@ -31,6 +31,9 @@ function UserSelector(){
             $form.Close()
             return
         })
+        [void]listbox.add_KeyDown({
+            $lisbox.add_MouseDoubleClick
+        })
     }
     Process{
         [void] $listBox.Items.Add($_.displayName + " (" + $_.sAMAccountName + ")")
